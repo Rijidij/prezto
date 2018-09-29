@@ -31,3 +31,5 @@ alias lni="${aliases[ln]:-ln} -i"
 alias mvi="${aliases[mv]:-mv} -i"
 alias rmi="${aliases[rm]:-rm} -i"
 
+alias ddrush='docker-compose exec web drush'
+
