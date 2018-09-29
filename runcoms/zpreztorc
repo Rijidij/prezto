@@ -35,6 +35,8 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'git' \
+  'archive' \
   'prompt'
 
 #
@@ -57,7 +59,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -110,10 +112,20 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Prompt
 #
 
+# Powerlevel9k settings (mode, at least, must be set before loading theme).
+POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_SHOW_CHANGESET=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs)
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND=208
+
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+#zstyle ':prezto:module:prompt' theme 'sorin'
+#zstyle ':prezto:module:prompt' theme 'cloud'
+zstyle ':prezto:module:prompt' theme 'powerlevel9k'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
