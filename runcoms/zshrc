@@ -45,6 +45,6 @@ alias dcd='docker-compose down'
 alias dce='docker-compose exec'
 
 # Enable|Disable Xdebug in Docker container
-alias dcx-on='docker-compose exec web xdbg 1 && docker-compose restart web'
-alias dcx-off='docker-compose exec web xdbg 0 && docker-compose restart web'
+alias dcx-on='docker-compose exec web xdebug-switch 1 && docker-compose restart web'
+alias dcx-off='docker-compose exec web xdebug-switch 0 && docker-compose restart web'
 
