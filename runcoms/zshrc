@@ -33,3 +33,8 @@ alias rmi="${aliases[rm]:-rm} -i"
 
 alias ddrush='docker-compose exec web drush'
 
+# Numiko drives
+alias nmd=/home/craig/.local/bin/numiko-mount-drives
+alias nud=/home/craig/.local/bin/numiko-umount-drives
+alias nrd=/home/craig/.local/bin/numiko-remount-drives
+
